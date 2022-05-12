@@ -26,7 +26,7 @@ print('----------------')
 print('zad4')
 txt4 = txt.isalpha() and (not txt.islower() and not txt.isupper())
 print(txt4)
-print('----------------')
+print('-----------------')
 
 # zadanie 5
 print('zad5')

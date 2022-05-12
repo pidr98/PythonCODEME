@@ -47,4 +47,4 @@ print(quote[::-1])
 new_quote = quote.replace('wisdom', 'friendship')
 print(new_quote)
 
-print('------------')
+print('-------------')
