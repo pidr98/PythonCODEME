@@ -1,3 +1,9 @@
+# zadanie 1
 fuel_consumption = 6.4
 distance = 120
-fuel_price =
+fuel_price = 5.04
+
+travel_cost = (fuel_consumption * distance) / 100 * fuel_price
+print('Koszt wyprawy wynosi: ', travel_cost)
+
+# zadanie 2
