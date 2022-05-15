@@ -1,4 +1,6 @@
-# zadanie 1
+# 2.liczby
+# Zmodyfikuj skrypt tak, by przyjmował wartości od użytkownika.
+
 fuel_consumption = 6.4
 distance = 120
 fuel_price = 5.04
