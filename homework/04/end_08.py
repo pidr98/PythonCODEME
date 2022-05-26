@@ -5,7 +5,7 @@
 # Wyświetl tylko te imiona, które wystąpiły conajmniej w 3 krajach.
 import collections
 
-# nie wiem...........................................................
+# nie wiem.
 
 germany_names = ['Mia', 'Emma', 'Sofia', 'Hanna', 'Emilia', 'Anna', 'Marie', 'Lina', 'Lea', 'Lena']
 france_names = ['Elea', 'Lya', 'Elyna', 'Anna', 'Lili', 'Noemie', 'Sophia', 'Julia', 'Louise', 'Ella']
