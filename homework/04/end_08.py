@@ -5,8 +5,6 @@
 # Wyświetl tylko te imiona, które wystąpiły conajmniej w 3 krajach.
 import collections
 
-# nie wiem.
-
 germany_names = ['Mia', 'Emma', 'Sofia', 'Hanna', 'Emilia', 'Anna', 'Marie', 'Lina', 'Lea', 'Lena']
 france_names = ['Elea', 'Lya', 'Elyna', 'Anna', 'Lili', 'Noemie', 'Sophia', 'Julia', 'Louise', 'Ella']
 italy_names = ['Sofia', 'Aurora', 'Giulia', 'Ginevra', 'Alice', 'Emma', 'Giorgia', 'Beatrice', 'Greta', 'Vittoria']
@@ -20,13 +18,21 @@ finland_names = ['Aino', 'Olivia', 'Sofia', 'Pihla', 'Aada', 'Eevi', 'Isla', 'Li
 
 
 full_names = germany_names + france_names + italy_names + gb_names + poland_names + netherlands_names + ukraine_names + sweden_names + norway_names + finland_names
-dict_names = dict(germany_names)
+#dict_names = dict(germany_names)
 print(full_names)
 print(len(full_names))
-print(type(full_names))
 
-occurance = collections.Counter(full_names)
-print(occurance)
+name_counter = {}
 
+for name in full_names:
+    if name in name_counter:
+        name_counter[name] += 1
+    else:
+        name_counter[name] = 1
 
+for k, v in name_counter.items():
+    if v >=3:
+        print(f'- {k} : {v}')
+    else:
+        continue
 
