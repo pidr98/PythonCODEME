@@ -7,6 +7,8 @@ class Canis:
     def show(self):
         print('🐕 🐕 🐕 🐕 🐕 🐕 🐕 🐕')
 
+    def description(self):
+        pass
 
 class Dog(Canis):
     kingdom = 'Animals'
@@ -24,10 +26,10 @@ class Dog(Canis):
         txt = f'My dog {self.name}, age: {self.age} is breed {self.breed}'
         print(txt)
 
-
 class Fox(Canis):
     def __init__(self):
-        print('create fox')
+        print('Create fox')
+
 
 
 dyzio = Dog('Dyzio', 3, 'mops')

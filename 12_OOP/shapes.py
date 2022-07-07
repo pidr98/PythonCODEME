@@ -1,40 +1,26 @@
 from abc import ABC, abstractmethod
 
-
-class Shape(ABC):
+class AbstractShape(ABC): #klasa abstrakcyjna
     @abstractmethod
-    def sides(self): # abstract method
+    def sides(self):
         pass
 
 
-class Triangle(Shape):
-
+class Triangle(AbstractShape):
     def sides(self):
-        print("I have 3 sides")
+        return 3
 
 
-class Circle(Shape):
-
+class Square(AbstractShape):
     def sides(self):
-        print("I have 0 sides")
+        return 4
 
+    def area(self, side):
+        return side * side
 
-class Square(Shape):
+# t = Triangle()
+# print(t.sides())
 
-    def sides(self):
-        print("I have 4 sides")
-
-
-T = Triangle()
-T.sides()
-
-C = Circle()
-C.sides()
-
-S = Square()
-S.sides()
-
-print('************')
-
-A = Shape()
-A.sides()
+s = Square()
+print(s.sides())
+print(s.area(3))
